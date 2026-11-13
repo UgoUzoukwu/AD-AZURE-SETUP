@@ -2,13 +2,21 @@
 <img src="https://i.imgur.com/pU5A58S.png" height="40%" width="70%"alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>AD AZURE SETUP (On-Premises)</h1>
+<h1>Active Directory Lab on Azure Virtual Machines</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
 <!-- <h2>Video Demonstration</h2>
 
 - ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com) -->
+
+<h2>Skills Demonstrated</h2>
+
+- Deploying a domain controller and promoting it to a new forest
+- Creating organizational units, admin accounts and standard users
+- Joining a Windows 10 client to the domain and configuring its DNS
+- Bulk user creation with PowerShell
+- Granting Remote Desktop access to domain users
 
 <h2>Environments and Technologies Used</h2>
 
@@ -73,7 +81,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://i.imgur.com/bnPM9tX.png" height="75%" width="100%" alt="perpetual ping"/>
 </p>
 <p>
-  Login to the Domain Controller and enable ICMPv4 in on the local windows firewall:
+  Login to the Domain Controller and enable ICMPv4 on the local windows firewall:
 </p>
 <p>
   <img src="https://i.imgur.com/ZpPyEkt.png" height="75%" width="100%" alt="enable ICMPv4"/>
@@ -174,7 +182,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3 align="center">Setup Remote Desktop for non-administrative users on Client-1</h3>
 <br />
 <p>
-  Log into Client-1 as mydomain.com\jane_admin and open system properties.
+  Log into Client-1 as myadproject.com\jane_admin and open system properties.
 </p>
 <p>
   Click “Remote Desktop”.
